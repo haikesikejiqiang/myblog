@@ -1,0 +1,51 @@
+script.
+  function addGitalkSource () {
+    const ele = document.createElement('link')
+    ele.rel = 'stylesheet'
+    ele.href= '!{url_for(theme.CDN.gitalk_css)}'
+    document.getElementsByTagName('head')[0].appendChild(ele)
+  }
+
+  function loadGitalk () {
+    function initGitalk () {
+      var gitalk = new Gitalk({
+        clientID: '!{theme.gitalk.client_id}',
+        clientSecret: '!{theme.gitalk.client_secret}',
+        repo: '!{theme.gitalk.repo}',
+        owner: '!{theme.gitalk.owner}',
+        admin: ['!{theme.gitalk.admin}'],
+        id: '!{md5(page.path)}',
+        language: '!{theme.gitalk.language}',
+        perPage: !{theme.gitalk.perPage},
+        distractionFreeMode: !{theme.gitalk.distractionFreeMode},
+        pagerDirection: '!{theme.gitalk.pagerDirection}',
+        createIssueManually: !{theme.gitalk.createIssueManually},
+        updateCountCallback: commentCount
+      })
+      gitalk.render('gitalk-container')
+    }
+
+    if (typeof Gitalk === 'function') initGitalk()
+    else {
+      addGitalkSource()
+      $.getScript('!{url_for(theme.CDN.gitalk)}', initGitalk)
+    }
+  }
+  
+  function commentCount(n){
+    if (document.querySelector('#post-meta .gitalk-comment-count')) {
+      document.querySelector('#post-meta .gitalk-comment-count').innerHTML= n
+    }
+  }
+
+  if ('!{defaultComment}' === 'Gitalk' || !{theme.comments.load_begin}) {
+    loadGitalk()
+  }
+  else {
+    function loadOtherComment () {
+      loadGitalk()
+    }
+  }
+
+
+

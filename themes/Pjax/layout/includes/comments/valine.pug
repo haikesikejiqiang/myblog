@@ -1,0 +1,64 @@
+- let emojiMaps = '""'
+if site.data.valine
+  - emojiMaps = JSON.stringify(site.data.valine)
+
+script.
+  function loadValine () {
+    function requestSetting (from, set) {
+      var from = from
+      var setting = set.split(',').filter(function(item){
+      return from.indexOf(item) > -1
+      });
+      setting = setting.length == 0 ? from :setting;
+      return setting
+    }
+
+    var guestInfo = requestSetting(['nick','mail','link'],'#{ theme.valine.guest_info }')
+    var requiredFields = requestSetting(['nick','mail'],'#{ theme.valine.requiredFields }')
+
+    function initValine () {
+      window.valine = new Valine({
+        el: '#vcomment',
+        appId: '#{theme.valine.appId}',
+        appKey: '#{theme.valine.appKey}',
+        placeholder: '#{theme.valine.placeholder}',
+        avatar: '#{theme.valine.avatar}',
+        meta: guestInfo,
+        pageSize: '#{theme.valine.pageSize}',
+        lang: '#{theme.valine.lang}',
+        recordIP: #{theme.valine.recordIP},
+        serverURLs: '#{theme.valine.serverURLs}',
+        emojiCDN: '#{theme.valine.emojiCDN}',
+        emojiMaps: !{emojiMaps},
+        enableQQ: #{theme.valine.enableQQ},
+        requiredFields: requiredFields,
+        path: window.location.pathname,
+      });
+    }
+
+    if (typeof Valine === 'function') initValine() 
+    else $.getScript('!{url_for(theme.CDN.valine)}', initValine)
+  }
+
+  if ('!{defaultComment}' === 'Valine' || !{theme.comments.load_begin}) {
+    document.querySelector('#vcomment') && loadValine()
+    !{theme.pjax} && document.addEventListener('pjax:complete', () => document.querySelector('#vcomment') && loadValine())
+  }
+  else {
+    function loadOtherComment () {
+      loadValine()
+    }
+  }
+
+link(rel='stylesheet' href='https://cdn.jsdelivr.net/gh/haikesikejiqiang/picred@master/2020/06/15/test05.css')
+script(src='https://sdk.jinrishici.com/v2/browser/jinrishici.js' charset='utf-8')
+script.
+  
+  function diyValine() {
+          jinrishici.load(function(result) {
+              var jrsc_plac = result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author
+              document.getElementById("veditor").setAttribute("placeholder", jrsc_plac);
+          });
+      }
+      setTimeout(diyValine, 10);
+  

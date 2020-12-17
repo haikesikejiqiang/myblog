@@ -1,0 +1,166 @@
+- class_name: 小伙伴
+  class_desc: 递茶(ฅ>ω<*ฅ)
+  link_list:
+    - name: Locker
+      link: https://onstart.top/
+      avatar: https://p.ananas.chaoxing.com/star3/origin/61b30c82fac59de380bd5c0fd0c7d410.jpg
+      descr: 不解释就弄不懂的事，就意味着怎样解释也弄不懂
+      # 边框大小 默认为0 
+      width: 0
+      # 边框样式 默认 solid
+      style: solid
+      # 边框颜色 默认淡蓝色 #49b1f5 #0078e7
+      color: "linear-gradient( 135deg, #81FFEF 10%, #F067B4 100%)"
+      # 自动旋转 可选值 flash（闪现） link_custom（单色呼吸灯） link_custom1（彩色呼吸灯）
+      custom: link_custom1
+      # 动画时长设定，默认为0
+      time: 4s
+      # name的颜色
+      namecolor: "#ff9191"
+      # descr的颜色
+      descolor: "#ff9191"
+      # 背景颜色
+      background: 0
+      # 鼠标悬停旋转角度
+      rotate: 360deg
+      # 自动旋转 latuo左旋转 rauto右旋转
+      autorotate: "lauto"
+      # 头像旋转的周期（时长）
+      autotime: 1s
+       #移除此链接的权重 0为否 非0为移除
+      remove: 0
+      
+    - name: Rui.plus
+      link: https://rui.plus
+      avatar: https://q1.qlogo.cn/g?b=qq&nk=1034958019&s=640
+      descr: 得得得得得得得
+    - name: 武汉彭鱼宴
+      link: https://daqwt.top
+      avatar: https://p.ananas.chaoxing.com/star3/origin/4ccfe2afb250cb42c38770ef7b3d1c8d.jpg
+      descr: no pain no gain！
+    - name: CtrlCV博客
+      link: https://www.hack-er.cn/
+      avatar: https://q1.qlogo.cn/g?b=qq&nk=247107341&s=640
+      descr: 是一个专注分享的博客
+    - name: 幕光倾城-Linfeng Mei
+      link: https://www.meilinfeng.top
+      avatar: https://s1.ax1x.com/2020/05/15/YymjXQ.jpg
+      descr: 钝学累功-勤能补拙
+    - name: 阿瑞
+      link: https://arraggon.github.io/
+      avatar: http://r.photo.store.qq.com/psc?/V12hS1A32PxdvZ/xBqlYxewEGhxwKHKc.e8gTCwjTItPeBYXa7dkE1qvtJ4j6hHRX3xLv65pHHZA9NdPD47xYCcp64WwgKG7w8WjAWkeLadd82fHgOci5rr8UA!/r
+      descr: 我喜欢一个人，也喜欢一个人。
+    - name: TanJia
+      link: https://www.tanj.com.cn/
+      avatar: https://p.ananas.chaoxing.com/star3/origin/be2841c3ab555a750e6c9ff4fa338345.png
+      descr: 一个前端程序员的个人博客 | 心之所向，无问西东
+    - name: XuQian
+      link: https://xuqssq.com
+      avatar: https://p.ananas.chaoxing.com/star3/origin/19b82b2fdf77e20acb5fc926442ad381.png
+      descr: 一个前端程序员的个人博客 | 记录生活，记录故事
+    - name: 雪曦
+      link: https://xiabor.com
+      avatar: https://p.ananas.chaoxing.com/star3/origin/4b20317912ccc7782da9948330efdd39.png
+      descr: 君浅吟，叹落笔
+    - name: 久别人潮
+      link: https://www.jiubrc.com/
+      avatar: https://ae01.alicdn.com/kf/Ucfa8db8e46224603a4349396b35c4335E.jpg
+      descr: — 祝福我未曾谋面的TA
+    - name: Joinis Blog
+      link: https://www.404creater.cn
+      avatar: https://p.ananas.chaoxing.com/star3/origin/8dc4779a6c3f5f65e9a7c9ae3feb830b.jpeg
+      descr: 明天起来我还能学前端
+    - name: 高浩轩
+      link: https://hkjyh5.coding-pages.com/
+      avatar: https://p.ananas.chaoxing.com/star3/origin/96766fe83c9722c24e1970430cf0ba97.png
+      descr: 一个平平无奇的小站
+    - name: Valcosmos
+      link: https://www.valzt.cn/
+      avatar: https://p.ananas.chaoxing.com/star3/origin/758f891a10845d949d049d1f18a2c61c.jpg
+      descr: 一只向往未来和远方的小小程序猿（Web前端） 
+    - name: UD小栈
+      link: https://www.gwshare.top/
+      avatar: https://p.ananas.chaoxing.com/star3/origin/56cf9d4505f5e497ea5300a049edcf37.jpg
+      descr: 神说要有光，于是便诞生了我
+    - name: 远游
+      link: https://blog.forwl.com
+      avatar: https://p.ananas.chaoxing.com/star3/origin/0c7df65282f5bb04eacffbc8cb0c1392.jpg
+      descr: 人需生活着，爱才有所附丽
+    - name: DIYsay
+      link: https://www.iaia.cc
+      avatar: https://p.ananas.chaoxing.com/star3/origin/b88945c595c01ee0eb2195565c36dd82.png
+      descr: DIYsay的个人博客
+      # 边框大小 默认为0 
+      width: 1px
+      # 边框样式 默认 solid
+      style: solid
+      # 边框颜色 默认淡蓝色 #49b1f5 #0078e7
+      color: "#FF8C00"
+      # 自动旋转 可选值 flash（闪现） link_custom（单色呼吸灯） link_custom1（彩色呼吸灯）
+      custom: link_custom
+      # 动画时长设定，默认为0
+      time: 2s
+      # name的颜色
+      namecolor: "#ff9191"
+      # descr的颜色
+      descolor: "#ff9191"
+      # 背景颜色
+      background: undefined
+      # 鼠标悬停旋转角度
+      rotate: 360deg
+      # 自动旋转 latuo左旋转 rauto右旋转
+      autorotate: "lauto"
+      # 头像旋转的周期（时长）
+      autotime: 1s
+       #移除此链接的权重 0为否 非0为移除
+      remove: 0
+    - name: xwcker
+      link: https://www.hack-gov.com.cn/
+      avatar: https://p.ananas.chaoxing.com/star3/origin/e4b34e5aaea959adea6d757eb92e42b5.gif
+      descr: 海客 GO - 爱牟 听着海客的瀛谈
+    - name: 所以
+      link: https://ii.sy
+      avatar: https://cdn.jsdelivr.net/gh/mydracula/image@master/2020/blog.25be9l4mt6ao.jpg
+      descr: 记录一些没用的 
+- class_name: 小妖友
+  class_desc: 递烟(ฅ>ω<*ฅ)
+  link_list:
+    - name: Dark
+      link: https://ii.do/
+      avatar: https://ae01.alicdn.com/kf/Uedd59a71a457434eb3250b2673fdacdb6.jpg
+      descr: 一个啥也不会的国别域名爱好者 
+    - name: dbz
+      link: https://dbz.im
+      avatar: https://p.ananas.chaoxing.com/star3/origin/291fafb7ac2ba292f3a11911253498b7.jpg
+      descr: 善良有尺，忍让有度
+    - name: 心凉
+      link: https://blog.xl1.top/
+      avatar: https://p.ananas.chaoxing.com/star3/origin/dc3973ace791fe1df1fc217bfb27c675.jpeg
+      descr: I‘m very vegetable and very poor.  
+    - name: 林淼
+      link: http://www.kangji.fun/
+      avatar: https://p.ananas.chaoxing.com/star3/origin/a2bbbfaf636c122fa9671847d45e8fee.jpeg
+      descr: Just sharing life
+    - name: 绝地图书馆
+      link: https://blog.jedilib.top/
+      avatar: https://p.ananas.chaoxing.com/star3/origin/2a841f8c6f71944319a37e3654699e28.jpg
+      descr: 愿原力与你同在
+    - name: 爱欧博客
+      link: http://blog.2o.cx/
+      avatar: https://q1.qlogo.cn/g?b=qq&nk=3932676&s=640
+      descr: 一个热爱分享的网站
+    - name: 私欲呀
+      link: http://caoyi.co/boke/
+      avatar: https://p.ananas.chaoxing.com/star3/origin/9274904771c050ec7ba922a76283d460.jpg
+      descr: 不忘初心 方能始终
+    - name: 柒染博客
+      link: https://qiranovo.com/
+      avatar: https://q1.qlogo.cn/g?b=qq&nk=507534154&s=640
+      descr: (゜-゜)つロ 干杯~     
+- class_name: 网站
+  class_desc: 暂定
+  link_list:
+    - name: 妖火网
+      link: https://yaohuo.me/
+      avatar: https://p.ananas.chaoxing.com/star3/origin/e4a326851ea83c8da1009768a9033646.png
+      descr: 欢迎妖友访问

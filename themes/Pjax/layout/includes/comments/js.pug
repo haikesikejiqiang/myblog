@@ -1,0 +1,13 @@
+- let defaultComment = theme.comments.use[0]
+each name in theme.comments.use
+  case name
+    when 'Disqus'
+      include ./disqus.pug
+    when 'Disqusjs'
+      include ./disqusjs.pug
+    when 'Livere'
+      include ./livere.pug
+    when 'Gitalk'
+      include ./gitalk.pug
+    when 'Utterances'
+      include ./utterances.pug
