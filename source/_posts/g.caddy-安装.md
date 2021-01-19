@@ -82,3 +82,13 @@ xcaddy build \
 [root@hecs-centos-7 ~]# caddy version
 v2.2.1 h1:Q62GWHMtztnvyRU+KPOpw6fNfeCD3SkwH7SfT1Tgt2c=
 ```
+
+## 基本用法
+在目录下新建`Caddyfile`
+```
+sang.pub
+
+root * /home/hexoBlog
+file_server
+```
+
